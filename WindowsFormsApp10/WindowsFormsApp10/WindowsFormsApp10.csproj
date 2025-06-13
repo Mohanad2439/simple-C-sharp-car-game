@@ -56,6 +56,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,6 +85,7 @@
     <None Include="Resources\car.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\gameaudio.wav.crdownload" />
     <None Include="Resources\sonic1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -115,6 +117,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sonic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YellowCar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Game-sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Game-sound %282%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game_music.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

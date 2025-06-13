@@ -117,13 +117,125 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>20, 7</value>
-  </metadata>
-  <metadata name="timer2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  </data>
+  <data name="timer2.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>107, 7</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>33</value>
-  </metadata>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="yellow2.Locked" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="line2.Locked" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="line4.Locked" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="line3.Locked" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="line1.Locked" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="line6.Locked" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="line8.Locked" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="line7.Locked" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="line5.Locked" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Locked" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.TrayHeight" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAFdrEACWtx8Ah6YEHBgXC1hXUyFBQD48PTw6VFlXVGlzcW15goB7gHRybnZNTElIOzs5C21s
+        ZwAAAAAHAAAACAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAABAE1hIwCDonYAosjFALji2TNkbp9iXlq+dnRw4Xh2cvN2dHD8e3l0/n99eP+CgHv/f314/3d1
+        cfdWVFGGKioqVlNUVbRtbW+6cHByaSUlJgo6OjoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAjSkwAEygpDkOPlG9EvMzaPNny/jLi//8Ky/P/S5en/5GNiP+ppqL/r6un/52Yk/+RjYj/kIyH/5SS
+        jf+ioZ3/rq2p/1hYWO1LTE7vhISG/5WVl/+Hh4j4b29wav///wAHBwcAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAEeXnQAhSUttY9LZ+3f6//9y7fP/ac7U/2Knr/+isrH/p6Kc/5ignf96sbn/TLDG/0ac
+        vv9NcYf/XmBh/3l4eP9ubnD/MDM8/2NkZ/+enqD/2tra/5ycnf+Dg4XFVFRWD2hoaQAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAA5ODQAHwkECVNmY6NrwMT/b7m9/4avr/+UnJX/lJCK/21tcf9EV2j/Hpy+/wrO
+        +f8A0P//AML+/wOi6f8UWZL/JC9J/yUwTP8hKj7/Y2Rn/5ycnf/t7O3/tra3/4qKjOVXWV8rAAAABjo6
+        O1BubnB4ZWVmPV9fYANsbG4AAAAAAAAAAAJeW1Z3oqCX+LzBu/+5t7H/paCY/2Vmav85Q1r/O0Zh/yx3
+        oP8lt/z/AIy//wBdcf8Cea//BK7+/wiW6P8YOWP/JDBS/yYxT/9LTVP/f4CC/7Cwsf+ampv/W11j/h4p
+        Q7wpLDSTaWlr9JaWmP+SkpTpdXV3ULCwswAAAAAALy4sPIqHgOXIxb7/xsC3/5WPif9FR1D/MjlP/09Z
+        bv9RWXD/LYKx/zef8f8MNFb/IRwZ/yY2S/8Miub/Baj3/xZMgf8oNVj/KTle/ycwRf9OUFb/cHF0/2Nk
+        af8sNUv/Jzdb/zQ6Sf6CgoT/0tLT/6OjpP9nZ2m1FRUVCDc3NwAyMS5jpqOd+sTFv/93tr7/JY2t/x5l
+        mv9MXXX/XGJz/01Xcv8yf6b/ebLm/1Bbc//JxsP/0dfn/yil+f8Fmuz/HEJw/ys6Xv8sPWP/KTle/ycz
+        UP8oMkr/JjJP/yo6X/8qOl//NTtL/4CAgf/V1db/nZ2e/2ZmaMo6OjoQQ0NDAAsLCiBZU0+iWZqn7hHL
+        9f8AuOf/A6nx/xttrP87SGb/MUNo/ypXgP9btNj/hq6//7DJzP+z8f//J7f4/xZ5w/8oTXf/LE13/y1N
+        d/8tRW3/LD9m/yw9Y/8sPWP/LD1j/ys8Yf8kLkX/Wltf/5SUlf+NjY7/XFxdvS0sKjk7OjgJAHOQAAA8
+        QQ4toNq+DYS//xEzPP8Sgab/CI3i/yNGcv8uVoL/LlyK/ytql/81mcT/N5/I/ymRxv8hc7D/LGCQ/y1b
+        h/8tXIr/Ll+N/y5cif8uVoP/LUx2/yxBaf8sPWP/LD1j/yg4W/8pMUX/QUVM/0FFT/8qLjn0eHZx7Hl2
+        cnUApMUAAIuMB1mt5bUkT5X/ZGFi/27J5v8Kken/KFaH/y5di/8uXoz/Ll2L/y1fj/8tYI//LlyK/y5d
+        iv8uXoz/LVqG/ypSfP8uXoz/Ll6M/y5ejP8rV4P/KUly/ytCaf8sP2X/Kjpf/yQzVP8nNlj/JzZZ/yg3
+        Wf9vcnf/lJGIpQAAAABv//8ANp28ZVqh1fVhhp//M6La/xl6w/8tVoP/LlWB/y5ejP8uXoz/Ll6M/y5i
+        kf8uYI7/Ll6M/y5ejP8tXIn/KlF7/y1civ8uXo3/MlyG/1dme/9dZHL/Q1Jq/yxMdP8uPmD/JzVY/yw9
+        ZP8sPWT/Kzth/0BHWOFPTEZMAAAAAAFaagAAOUAINK/UUjSx6YEXXo/hK2CR/y5ejP8tVoL/LVaC/y5d
+        i/8uXoz/Ll+O/y5jlP8uYI7/Ll6M/y5ejP8rVoH/KlJ+/ypVgv81TWj/j5GU/5+en/95fYT/NlyC/0RX
+        bv8rOFX/LD1j/yw9Y/8oOFz/Exoxjv///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAsWIWQgQGDuLFuH/y5f
+        jf8uWYb/LlaC/y5ahv8uXYr/Ll+N/y5jk/8uX47/Ll+N/y1civ8pUHn/J0ty/zpTbf9yeoH/jJCU/32G
+        j/84Y4z/MV2I/yxLcv8sPmX/LD5j/yMwV/8NDkR4GB5WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAoV
+        H1EXMEfIJUtw+yxahv8uXoz/LVqI/y5ah/8uXov/LFuI/ylNcP8uSGD/NUxo/ztPff8rPW7/GzNm/ylJ
+        d/8xUXD/M1l8/y9gjf8qVID/LVmF/y1Icf8rO2D/FyA50QECFy0EBhcAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAHz5dAAMHChcMGCNgFy5FsSE8V/A1Wn7/LlmB/yZHZ/8pOlD/MTlH/zc5Pf9IS1b/WluV/0lH
+        n/8VEpP/FRSt/xUdh/8cM3j/JEVv/ylNdf8uXYr/LVN+/yIwTdoPFSI2OlKEAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHJSYnjkpOVOUfJy/KKC0yhkpLUH9LT1bDSk1Q7FZf
+        b/5mbMj/bmjZ/y0qn/8UC87/Fg3S/xQNv/8THJX/IT5p/y5ciP8iRWfjDxooT3LY/wAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABsbGgASEhEVHBsZJBMfLFlqcnow2NfVLre3
+        tlbAwsNimJ+ntnd+uPh9e+f/Xlu2/xoUuf8WD9j/FRPK/xQppf8aOGD4HTpWvBEiMz8AAAABAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8AIDFHWIyV
+        nzTT09I69/f3O////0j8/PtevL/LpouPvfRdX4//ExVW/xQgh/oPHVfjDh85qw0cKVQHDhQQESMzAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAMdKjxes7nCM////zP///9E////VPb392PFys1+aHN6tiMtNZYAAABtCBITTwsWGicAAAAHAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAABIbJVddZGtftr3DVKuwtWV3foR8WWVxiy88SXgQHiw1ABQtAwcdNAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAECQ0AAAMGEBIZIEwqPlFeJzZEWw4UGkMIGisfAAAABAABBQAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA///////////////////////////8ABH/4AAA/8AAAP/AAAB/gAAAAwAA
+        AAMAAAABAAAAAQAAAACAAAAAgAAAAMAAAADAAAAB+AAAAfgAAAH+AAAD/4AAB//AAAf/8AAf/+AAf//w
+        B///8B////////////////////////////8=
+</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="game_music" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\Downloads\game_music.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

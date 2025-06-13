@@ -61,11 +61,21 @@ namespace WindowsFormsApp10.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon car_icon {
+            get {
+                object obj = ResourceManager.GetObject("car_icon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap armycar {
+        internal static System.Drawing.Bitmap F1 {
             get {
-                object obj = ResourceManager.GetObject("armycar", resourceCulture);
+                object obj = ResourceManager.GetObject("F1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,79 +83,28 @@ namespace WindowsFormsApp10.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bluecar {
+        internal static System.Drawing.Bitmap F2 {
             get {
-                object obj = ResourceManager.GetObject("bluecar", resourceCulture);
+                object obj = ResourceManager.GetObject("F2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream game_music {
+            get {
+                return ResourceManager.GetStream("game_music", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap boom {
+        internal static System.Drawing.Bitmap YellowCar {
             get {
-                object obj = ResourceManager.GetObject("boom", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap da3ama {
-            get {
-                object obj = ResourceManager.GetObject("da3ama", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap gameover {
-            get {
-                object obj = ResourceManager.GetObject("gameover", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap greencar {
-            get {
-                object obj = ResourceManager.GetObject("greencar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap hemedti {
-            get {
-                object obj = ResourceManager.GetObject("hemedti", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap redcar {
-            get {
-                object obj = ResourceManager.GetObject("redcar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap tank {
-            get {
-                object obj = ResourceManager.GetObject("tank", resourceCulture);
+                object obj = ResourceManager.GetObject("YellowCar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
