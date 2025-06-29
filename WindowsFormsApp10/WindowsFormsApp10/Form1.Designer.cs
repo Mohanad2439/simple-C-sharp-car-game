@@ -1,7 +1,7 @@
 ﻿
-namespace WindowsFormsApp10
+namespace CarGame
 {
-    partial class Form1
+    partial class CarGame
     {
         /// <summary>
         /// Required designer variable.
@@ -30,9 +30,9 @@ namespace WindowsFormsApp10
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CarGame));
+            this.road = new System.Windows.Forms.Timer(this.components);
+            this.traffic = new System.Windows.Forms.Timer(this.components);
             this.car1 = new System.Windows.Forms.PictureBox();
             this.car2 = new System.Windows.Forms.PictureBox();
             this.Maincar = new System.Windows.Forms.PictureBox();
@@ -47,6 +47,9 @@ namespace WindowsFormsApp10
             this.line7 = new System.Windows.Forms.PictureBox();
             this.line5 = new System.Windows.Forms.PictureBox();
             this.Score_label = new System.Windows.Forms.Label();
+            this.scoretimer = new System.Windows.Forms.Timer(this.components);
+            this.Speed = new System.Windows.Forms.Timer(this.components);
+            this.start = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.car1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.car2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maincar)).BeginInit();
@@ -60,166 +63,156 @@ namespace WindowsFormsApp10
             ((System.ComponentModel.ISupportInitialize)(this.line8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.line7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.line5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.start)).BeginInit();
             this.SuspendLayout();
             // 
-            // timer1
+            // road
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 10;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.road.Enabled = true;
+            this.road.Interval = 10;
+            this.road.Tick += new System.EventHandler(this.road_Tick);
             // 
-            // timer2
+            // traffic
             // 
-            this.timer2.Enabled = true;
-            this.timer2.Interval = 60;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            this.traffic.Enabled = true;
+            this.traffic.Interval = 60;
+            this.traffic.Tick += new System.EventHandler(this.traffic_Tick);
             // 
             // car1
             // 
             this.car1.BackColor = System.Drawing.Color.Transparent;
-            this.car1.Image = global::WindowsFormsApp10.Properties.Resources.YellowCar;
-            this.car1.Location = new System.Drawing.Point(190, 60);
+            this.car1.Image = global::CarGame.Properties.Resources.YellowCar;
+            resources.ApplyResources(this.car1, "car1");
             this.car1.Name = "car1";
-            this.car1.Size = new System.Drawing.Size(55, 94);
-            this.car1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.car1.TabIndex = 8;
             this.car1.TabStop = false;
+            this.car1.Tag = "CarLeft";
             this.car1.Click += new System.EventHandler(this.greencar1_Click);
             // 
             // car2
             // 
-            this.car2.Image = global::WindowsFormsApp10.Properties.Resources.F2;
-            this.car2.Location = new System.Drawing.Point(627, 12);
+            this.car2.Image = global::CarGame.Properties.Resources.F2;
+            resources.ApplyResources(this.car2, "car2");
             this.car2.Name = "car2";
-            this.car2.Size = new System.Drawing.Size(51, 92);
-            this.car2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.car2.TabIndex = 7;
             this.car2.TabStop = false;
+            this.car2.Tag = "CarRight";
             // 
             // Maincar
             // 
-            this.Maincar.Image = global::WindowsFormsApp10.Properties.Resources.F1;
-            this.Maincar.Location = new System.Drawing.Point(395, 331);
+            this.Maincar.Image = global::CarGame.Properties.Resources.F1;
+            resources.ApplyResources(this.Maincar, "Maincar");
             this.Maincar.Name = "Maincar";
-            this.Maincar.Size = new System.Drawing.Size(56, 118);
-            this.Maincar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Maincar.TabIndex = 6;
             this.Maincar.TabStop = false;
             this.Maincar.Click += new System.EventHandler(this.car_Click);
             // 
             // yellow2
             // 
             this.yellow2.BackColor = System.Drawing.Color.Yellow;
-            this.yellow2.Location = new System.Drawing.Point(787, -2);
+            this.yellow2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.yellow2, "yellow2");
             this.yellow2.Name = "yellow2";
-            this.yellow2.Size = new System.Drawing.Size(10, 479);
-            this.yellow2.TabIndex = 5;
             this.yellow2.TabStop = false;
             // 
             // yellow1
             // 
             this.yellow1.BackColor = System.Drawing.Color.Yellow;
-            this.yellow1.Location = new System.Drawing.Point(87, -2);
+            this.yellow1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.yellow1, "yellow1");
             this.yellow1.Name = "yellow1";
-            this.yellow1.Size = new System.Drawing.Size(10, 481);
-            this.yellow1.TabIndex = 4;
             this.yellow1.TabStop = false;
             // 
             // line2
             // 
             this.line2.BackColor = System.Drawing.SystemColors.Control;
-            this.line2.Location = new System.Drawing.Point(277, 129);
+            resources.ApplyResources(this.line2, "line2");
             this.line2.Name = "line2";
-            this.line2.Size = new System.Drawing.Size(15, 74);
-            this.line2.TabIndex = 3;
             this.line2.TabStop = false;
             this.line2.Click += new System.EventHandler(this.line2_Click);
             // 
             // line4
             // 
             this.line4.BackColor = System.Drawing.SystemColors.Control;
-            this.line4.Location = new System.Drawing.Point(277, 375);
+            resources.ApplyResources(this.line4, "line4");
             this.line4.Name = "line4";
-            this.line4.Size = new System.Drawing.Size(15, 74);
-            this.line4.TabIndex = 2;
             this.line4.TabStop = false;
             // 
             // line3
             // 
             this.line3.BackColor = System.Drawing.SystemColors.Control;
-            this.line3.Location = new System.Drawing.Point(277, 251);
+            resources.ApplyResources(this.line3, "line3");
             this.line3.Name = "line3";
-            this.line3.Size = new System.Drawing.Size(15, 74);
-            this.line3.TabIndex = 1;
             this.line3.TabStop = false;
             // 
             // line1
             // 
             this.line1.BackColor = System.Drawing.SystemColors.Control;
-            this.line1.Location = new System.Drawing.Point(277, 12);
+            resources.ApplyResources(this.line1, "line1");
             this.line1.Name = "line1";
-            this.line1.Size = new System.Drawing.Size(15, 74);
-            this.line1.TabIndex = 0;
             this.line1.TabStop = false;
             // 
             // line6
             // 
             this.line6.BackColor = System.Drawing.SystemColors.Control;
-            this.line6.Location = new System.Drawing.Point(570, 129);
+            resources.ApplyResources(this.line6, "line6");
             this.line6.Name = "line6";
-            this.line6.Size = new System.Drawing.Size(15, 74);
-            this.line6.TabIndex = 12;
             this.line6.TabStop = false;
             this.line6.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // line8
             // 
             this.line8.BackColor = System.Drawing.SystemColors.Control;
-            this.line8.Location = new System.Drawing.Point(570, 375);
+            resources.ApplyResources(this.line8, "line8");
             this.line8.Name = "line8";
-            this.line8.Size = new System.Drawing.Size(15, 74);
-            this.line8.TabIndex = 11;
             this.line8.TabStop = false;
             // 
             // line7
             // 
             this.line7.BackColor = System.Drawing.SystemColors.Control;
-            this.line7.Location = new System.Drawing.Point(570, 251);
+            resources.ApplyResources(this.line7, "line7");
             this.line7.Name = "line7";
-            this.line7.Size = new System.Drawing.Size(15, 74);
-            this.line7.TabIndex = 10;
             this.line7.TabStop = false;
             // 
             // line5
             // 
             this.line5.BackColor = System.Drawing.SystemColors.Control;
-            this.line5.Location = new System.Drawing.Point(570, 12);
+            resources.ApplyResources(this.line5, "line5");
             this.line5.Name = "line5";
-            this.line5.Size = new System.Drawing.Size(15, 74);
-            this.line5.TabIndex = 9;
             this.line5.TabStop = false;
             // 
             // Score_label
             // 
-            this.Score_label.AutoSize = true;
-            this.Score_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            resources.ApplyResources(this.Score_label, "Score_label");
+            this.Score_label.BackColor = System.Drawing.Color.Black;
+            this.Score_label.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Score_label.Cursor = System.Windows.Forms.Cursors.No;
-            this.Score_label.Enabled = false;
-            this.Score_label.Font = new System.Drawing.Font("Andalus", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Score_label.ForeColor = System.Drawing.Color.Snow;
-            this.Score_label.Location = new System.Drawing.Point(3, -2);
+            this.Score_label.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Score_label.ForeColor = System.Drawing.Color.White;
             this.Score_label.Name = "Score_label";
-            this.Score_label.Size = new System.Drawing.Size(97, 44);
-            this.Score_label.TabIndex = 13;
-            this.Score_label.Text = "Score: ";
             this.Score_label.Click += new System.EventHandler(this.Score_label_Click);
             // 
-            // Form1
+            // scoretimer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.scoretimer.Enabled = true;
+            this.scoretimer.Tick += new System.EventHandler(this.scoretimer_Tick);
+            // 
+            // Speed
+            // 
+            this.Speed.Enabled = true;
+            this.Speed.Interval = 2000;
+            this.Speed.Tick += new System.EventHandler(this.Speed_Tick);
+            // 
+            // start
+            // 
+            this.start.Image = global::CarGame.Properties.Resources.start;
+            resources.ApplyResources(this.start, "start");
+            this.start.Name = "start";
+            this.start.TabStop = false;
+            // 
+            // CarGame
+            // 
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(911, 481);
+            this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.start);
             this.Controls.Add(this.Score_label);
             this.Controls.Add(this.yellow2);
             this.Controls.Add(this.yellow1);
@@ -234,10 +227,8 @@ namespace WindowsFormsApp10
             this.Controls.Add(this.line4);
             this.Controls.Add(this.line3);
             this.Controls.Add(this.line1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "CarGame";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
@@ -254,6 +245,7 @@ namespace WindowsFormsApp10
             ((System.ComponentModel.ISupportInitialize)(this.line8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.line7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.line5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.start)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,7 +254,7 @@ namespace WindowsFormsApp10
         #endregion
 
         private System.Windows.Forms.PictureBox line1;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer road;
         private System.Windows.Forms.PictureBox line3;
         private System.Windows.Forms.PictureBox line4;
         private System.Windows.Forms.PictureBox line2;
@@ -271,12 +263,15 @@ namespace WindowsFormsApp10
         private System.Windows.Forms.PictureBox Maincar;
         private System.Windows.Forms.PictureBox car2;
         private System.Windows.Forms.PictureBox car1;
-        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer traffic;
         private System.Windows.Forms.PictureBox line6;
         private System.Windows.Forms.PictureBox line8;
         private System.Windows.Forms.PictureBox line7;
         private System.Windows.Forms.PictureBox line5;
-        private System.Windows.Forms.Label Score_label;
+        private System.Windows.Forms.Timer scoretimer;
+        private System.Windows.Forms.Timer Speed;
+        private System.Windows.Forms.PictureBox start;
+        public System.Windows.Forms.Label Score_label;
     }
 }
 
